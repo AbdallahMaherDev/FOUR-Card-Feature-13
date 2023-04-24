@@ -110,11 +110,14 @@ body {
 .containter .content-body .box img {    transform: translateX(222px);}
 @media (min-width: 768px) {
     body {
-        margin-top: 5px;
+        margin-top: 7px;
         overflow: hidden;
     }
     .containter .content-body .box h2 {
         margin-bottom: 9px;
+    }
+    .containter .content-body .box.box-1 {
+        margin-top: 32px;
     }
 }
 @media (max-width: 767px) {
