@@ -1,0 +1,160 @@
+:root {
+    --Red: hsl(0, 78%, 62%) ;
+    --Cyan: hsl(180, 62%, 55%) ;
+    --Orange: hsl(34, 97%, 64%) ;
+    --Blue: hsl(212, 86%, 64%) ;
+    --Very-Dark-Blue: hsl(234, 12%, 34%) ;
+    --Grayish-Blue: hsl(229, 6%, 66%) ;
+    --Very-Light-Gray: hsl(0, 0%, 98%) ;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 42px 24px;
+    Font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-rendering: optimizeSpeed;
+    background-color: var(--Very-Light-Gray);    
+    font-family: 'Poppins', sans-serif;
+}
+.containter .head {
+    color: var(--Very-Dark-Blue);
+    text-align: center;
+    margin-bottom: 63px;
+}
+.containter .head h1 {
+    font-weight: 200;
+    font-size: 36px;
+    
+}
+.containter .head h2{
+    margin-bottom: 16px;
+    margin-top: -4px;
+    font-size: 36px;
+}
+.containter .head p {
+    opacity: 0.6;
+    max-width: 500px;
+    display: inline-block;
+    line-height: 1.7;
+}
+.containter .content-body {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.containter .content-body .box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 15px 20px 0px #2196f31f;
+    padding: 32px 32px 28px 32px;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.containter .content-body .half-box .box:not(.box-3) {
+    margin-bottom: 30px;
+}
+.containter .content-body .box::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4.4px;
+}
+.containter .content-body .box.box-1::before {
+    background-color: var(--Cyan);
+}
+.containter .content-body .box.box-2::before {
+    background-color: var(--Red);
+}
+.containter .content-body .box.box-3::before {
+    background-color: var(--Orange);
+}
+.containter .content-body .box.box-4::before {
+    background-color: var(--Blue);
+}
+.containter .content-body .box.box-1 ,
+.containter .content-body .box.box-4 {
+    top: -16px;
+}
+.containter .content-body .box.box-4 {
+    margin-top: 32px
+}
+.containter .content-body .box h2 {
+    font-size: 20px;
+    color: var(--Very-Dark-Blue);
+}
+.containter .content-body .box p {
+    opacity: 0.5;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 38px;
+}
+.containter .content-body .box img {    transform: translateX(222px);}
+@media (min-width: 768px) {
+    body {
+        margin-top: -40px;
+        overflow: hidden;
+    }
+    .containter .content-body .box h2 {
+        margin-bottom: 9px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        margin: 75px 24px;
+    }
+    .containter .head {
+        margin-bottom: 82px;
+    }
+    .containter .head h1 {
+        font-size: 21px;
+    }
+    .containter .head h2{
+        margin-top: 3px;
+        font-size: 21px;
+    }
+    .containter .head p {
+        line-height: 1.5;
+    }
+    .containter .content-body {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .containter .content-body .box {
+        padding: 23px 23px 18px;
+        box-shadow: 0px 20px 18px 4px #2196f31f;
+        max-width: 290px;
+    }
+    .containter .content-body .half-box .box:not(.box-3) {
+        margin-bottom: 20px;
+    }
+    .containter .content-body .box h2 {
+        font-size: 17.7px;
+        margin-bottom: 1px;
+    }
+    .containter .content-body .box p {
+        margin-bottom: 32px;
+    }
+    .containter .content-body .box img {
+        transform: translateX(190px);
+        width: 50px;
+    }
+}
