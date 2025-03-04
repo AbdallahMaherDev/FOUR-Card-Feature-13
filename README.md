@@ -2,23 +2,18 @@
 
 🌟 Introduction
 
-Hello! I'm Abdallah Maher, and this is a solution to the "Results Summary Component" challenge from Frontend Mentor. This project is a simple yet elegant component that displays a user's test results in a visually appealing way.
+Hello! I'm Abdallah Maher, and this is a solution to the " Four card feature section" challenge from Frontend Mentor. This project is a clean and structured feature section that highlights four key aspects in a visually appealing way. It is fully responsive and follows best practices in HTML & CSS.
 
 🚀 Features
 
-Responsive and accessible design
-
-Well-structured HTML & CSS
-
-Dynamic score representation
+✔️ Fully Responsive Design – Adapts to different screen sizes seamlessly.
+✔️ Modern & Clean UI – Uses CSS Flexbox & Grid for an organized layout.
+✔️ Minimalist & Professional Look – Ensures readability and ease of use.
+✔️ Accessible & Well-structured Code – Follows best coding practices.
 
 🛠 Technologies Used
 
-HTML
-
-CSS
-
-Open index.html in your browser to view the component.
+HTML / CSS
 
 🎨 Preview
 
